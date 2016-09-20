@@ -42,7 +42,11 @@ class JsonDeserializationVisitor extends Base {
                     )
                 ));
             } else {
-                $metadata->reflection->setValue($this->getCurrentObject(), $v);
+                //https://github.com/schmittjoh/serializer/pull/290#issuecomment-159778071
+                //https://github.com/AmsTaFFix/extjs-bundle/issues/17
+                if (is_object($this->getCurrentObject())) {
+                    $metadata->reflection->setValue($this->getCurrentObject(), $v);
+                }
             }
 
             return;
