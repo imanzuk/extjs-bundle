@@ -1,5 +1,5 @@
 {
-    "name": "amstaffix/extjs-bundle",
+    "name": "imanzuk/extjs-bundle",
     "type": "symfony-bundle",
     "description": "Use ExtJs with Symfony 2",
     "keywords": ["extjs", "bundle", "symfony2"],
@@ -15,8 +15,12 @@
             "email": "amstaffix@gmail.com"
         },
         {
+            "name": "Istvan Manzuk",
+            "email": "istvan.manzuk@gmail.com"
+        },
+        {
             "name": "Community",
-            "homepage": "https://github.com/AmsTaFFix/extjs-bundle/graphs/contributors"
+            "homepage": "https://github.com/imanzuk/extjs-bundle/graphs/contributors"
         }
     ],
     "require": {
